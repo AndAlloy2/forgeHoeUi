@@ -1,27 +1,10 @@
 # Forgehomeui
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Навчальний проект, Кормило А.Р.
+Для запуску системи необхідно:
+1. Запустити базу даних PostgreSQL під назвою forgehome, порт 5432, користувач та пароль – по бажанню, вказати ці параметри в application.properties.
+2. Збудувати та запустити Maven проєкт ForgeHomeBE використовуючи Java Virtual Machive 20+ (Amazon Coretto як приклад)
+3. Зібрати та запустити Angular використовуючи NodeJS 20 версії консольними командами в папці де знаходиться angular.json файл: “npm install”, потім “ng serve”, програма доступна за http://localhost:4200
+4. Зберегти код на Pico через IDE Thonny або перенести у неї файл скрипта під назвою "main.py" та заживити пристрій у радіусі дії локальної мережі, попереднього записавши в код IP адресу сервера (ws.connect("***")) (якщо це локальний ПК, на Windows свою IP можна дізнатись консольною командою “ipconfig”).
+5. Якщо сервер та веб-застосунок запущені, а Pico WH ініціалізувалась – на екрані дисплею буде видно зелений індикатор що свідчить про під’єднання до серверу (червоний якщо була помилка).
+6. Кнопка D (внизу справа, за умови що джойстик зліва) - підвищення порогу, над нею кнопка - зниження. Друга зверху - індикація отримання повідомлення із сервера, перша - відповідає за індикацію з'єднання та надсилання повідомлення з мікросхеми
