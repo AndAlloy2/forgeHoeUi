@@ -1,5 +1,6 @@
 # Forgehomeui
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+
 Навчальний проект, Кормило А.Р.
 Для запуску системи необхідно:
 1. Запустити базу даних PostgreSQL під назвою forgehome, порт 5432, користувач та пароль – по бажанню, вказати ці параметри в application.properties.
